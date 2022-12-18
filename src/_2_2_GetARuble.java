@@ -1,8 +1,7 @@
 public class _2_2_GetARuble {
     public static void main(String[] args) {
-        int accountBalance = 100_50;        //Дабл использовать нельзя, чтоб не потерялись копейки
-        int replenishmentAmount = 500_00;   //По этому все вычисления делаем в копейках при помощи int
-        //accountBalance = replenishmentAmount > 1000_00 ? accountBalance + replenishmentAmount + replenishmentAmount / 100 : accountBalance + replenishmentAmount;
+        int accountBalance = 100_50;        //Начальный баланс. Дабл использовать нельзя, чтоб не потерялись копейки. По этому все вычисления делаем в копейках при помощи int
+        int replenishmentAmount = 1500_00;   // Сумма поплнения
         if (replenishmentAmount > 1000_00) {
             accountBalance += (replenishmentAmount + replenishmentAmount / 100);
         } else {
